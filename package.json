@@ -1,0 +1,30 @@
+{
+  "name": "code_challenge_five",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kenne835/code_challenge_five.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kenne835/code_challenge_five/issues"
+  },
+  "homepage": "https://github.com/Kenne835/code_challenge_five#readme",
+  "dependencies": {
+    "angular": "^1.6.5",
+    "angular-route": "^1.6.5",
+    "body-parser": "^1.17.2",
+    "bootstrap": "^3.3.7",
+    "express": "^4.15.3",
+    "jquery": "^3.2.1",
+    "mongoose": "^4.11.4",
+    "pg": "^7.0.2"
+  }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Code Challenge 5</title>
+    <script type="text/javascript" src="/vendors/angular.min.js"></script>
+    <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/people.controller.js"></script>
+
+    <link rel="stylesheet" href="/vendors/bootstrap.min.css" />
+</head>
+<body ng-app="myApp">
+    <div class="container" ng-controller="PeopleController as peeps">
+        <h1>Message Board</h1>
+        <div class="row">
+            <div class="col-md-12">
+            <form>
+                <label for="name">Name: </label>
+                <input type="text" ng-model="peeps.newPerson.name" id="name" placeholder="Name" />
+                <label for="message">Message: </label>
+                <input type="text" ng-model="peeps.newPerson.message" id="message" placeholder="Message" />
+
+                <button class="btn btn-primary" ng-click="peeps.addPerson()">Add Message</button>
+            </form>
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+              <div ng-repeat="person in peeps.people" class="well col-md-3">
+                <p>{{person.name}}</p>
+                <p>{{person.message}}</p>
+              </div>
+          </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
